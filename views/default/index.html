@@ -1,0 +1,33 @@
+{{left_sidebar_enabled=right_sidebar_enabled=False}}
+{{extend 'layout.html'}}
+
+<ul id='menu' class='clearfix'>
+{{for tag in db(db.tags).select():}}
+
+{{=LI(A(tag.tag, _href=URL('index.load', vars=dict(the_view=tag.tag)), cid="links"))}}
+
+{{pass}}
+{{=LI(A('+', _href=URL('create.load#modal_frame'), cid='modal_frame', _class='create_link'))}}
+</ul>
+<section id="links">
+
+{{=LOAD('default', 'index.load', ajax=True)}}
+
+</section>
+
+{{#=BEAUTIFY(response._vars)}}
+
+{{block left_sidebar}}New Left Sidebar Content{{end}}
+{{block right_sidebar}}New Right Sidebar Content{{end}}
+
+<script>
+	$(document).ready(function() {
+		$('.create_link, .edit_link, .modal_link').live('click', function(){
+			$('#modal_frame').show();
+		});
+		$('.close_link').live('click', function(){
+			$(this).parent('#modal_frame').hide();
+			return false
+		});
+	});
+</script>
