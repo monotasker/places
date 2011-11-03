@@ -1,0 +1,9 @@
+{{for link in links:}}
+<li class='{{=link.link_colour}}'>
+{{=A(link.link_name, _href=link.link_url, _title=link.link_name, _class='link_caption')}}
+{{=A(IMG(_src=URL('download', args=link.link_image), _alt=link.link_name, _title=link.link_name), _href=link.link_url, _title=link.link_name, _class='link_icon')}}
+{{=A('', _href=URL('default', 'edit.load', args=[link.id]), cid='modal_frame', _class='edit_link')}}
+</li>
+{{pass}}
+
+{{#=BEAUTIFY(response._vars)}}

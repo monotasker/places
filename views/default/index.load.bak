@@ -1,0 +1,6 @@
+{{for link in links:}}
+{{=LI(A(link.link_name, _href=link.link_url))}}
+{{pass}}
+
+{{=BEAUTIFY(response._vars)}}
+{{=links}}
