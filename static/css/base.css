@@ -13,8 +13,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
+b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
@@ -366,48 +365,24 @@ NON-SEMANTIC HELPER CLASSES
 
 /** colours **/
 
-
-.red{
-    background-color:#B10808    
-}
-
-.wine{
-    background-color:#701;
-}
-
+.red{background-color:#B10808}
+.wine{background-color:#701}
 .white{
     background-color:#E7EEF5;   
     background-image:-moz-linear-gradient(top, rgba(270,270,270,0.6) 0%, rgba(270,270,270,0.1) 5%, rgba(0,0,0,0.1) 95%, rgba(0,0,0,0.6) 100%), 
         -moz-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(270,270,270,0) 5%, rgba(270,270,270,0) 95%, rgba(0,0,0,0.2) 100%),
         -moz-radial-gradient(50% 16% 360deg,circle farthest-side, rgba(270,270,270,0.7), rgba(270,270,270,0) 140%);
 }
-.blue{
-    background-color:#000631;    
-}
-.green{
-    background-color:#0D3100;
-}
-.light-green{
-    background-color:#5BA917;    
-}
-.light-blue{
-    background-color:#164CA8;
-}
-.pale-blue{
-    background-color:#7E9AFF;
-}
-.black{
-    background-color:#000;
-}
-.yellow{
-    background-color:yellow;
-}
-.purple{
-    background-color:#58007D;
-}
-.orange{
-    background-color:#FF9700;
-}
+.blue{background-color:#000631;}
+.green{background-color:#0D3100;}
+.light-green{background-color:#5BA917;}
+.light-blue{background-color:#164CA8;}
+.pale-blue{background-color:#7E9AFF;}
+.black{background-color:#000;}
+.yellow{background-color:yellow;}
+.purple{background-color:#58007D;}
+.orange{background-color:#FF9700;}
+.pink{background-color:#D8D8D8;}
 
 /****************************************************************
 PAGE LAYOUT
