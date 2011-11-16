@@ -1,0 +1,7 @@
+<h2>Categories</h2>
+{{=closer}}
+{{for tag in taglist:}}
+{{=tag}}
+{{pass}}
+<h3>Add new category</h3>
+{{=form}}
