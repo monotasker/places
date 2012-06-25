@@ -69,3 +69,11 @@ timestamp: 2011-09-30T16:50:14.789344
 ALTER TABLE links ADD link_image CHAR(512);
 timestamp: 2011-09-30T16:50:14.894746
 ALTER TABLE links ADD link_colour CHAR(512);
+timestamp: 2012-06-14T21:36:29.063414
+ALTER TABLE auth_user ADD registration_id CHAR(512);
+timestamp: 2012-06-14T21:36:29.255332
+ALTER TABLE auth_cas ADD service CHAR(512);
+timestamp: 2012-06-14T21:36:29.414631
+ALTER TABLE auth_cas ADD renew CHAR(1);
+timestamp: 2012-06-14T21:36:29.859696
+ALTER TABLE auth_cas ADD ticket CHAR(512);
